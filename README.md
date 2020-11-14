@@ -19,7 +19,7 @@ Python 3.8 and Twilio API
 ## Getting Started
 
 ## Prerequisites
-User must have PC or laptop with any compatitable operating system (Windows, Linux, Mac OS etc) and installed Python3 interpretator.
+User must have PC or laptop with any compatitable operating system (Windows, Linux, Mac OS etc) and installed Python3 interpretator with dotenv and Twilio modules.
 *********
 
 ## Installation
