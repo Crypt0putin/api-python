@@ -1,4 +1,4 @@
-import requests, os, time
+import requests, os, time, logging
 from twilio.rest import Client
 from dotenv import load_dotenv
 load_dotenv()
@@ -10,10 +10,11 @@ r = requests.get(input('Введите полный адрес интернет 
 
 def checker(msg):
     message = client.messages.create(
-        body=msg,
+        body = msg,
         from_='+12283357916',
-        to='+7xxxxxxxxxx',
+        to = '+79871758544',
     )
+    print('Сообщение о доступности ресурса уже в пути!')
 
 if r.ok == False:
     while True:
@@ -24,5 +25,3 @@ if r.ok == False:
 else:
     msg = 'Привет! Целевой ресурс в настоящее время работает исправно.'
     checker(msg)
-
-print('Сообщение о доступности ресурса ресурса ужgitе в пути!')
